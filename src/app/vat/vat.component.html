@@ -1,0 +1,5 @@
+<input type="text" [(ngModel)]="article">
+<input type="text" [(ngModel)]="value">
+<button (click)="onClick()">Submit</button>
+
+Result: {{ result | currency:'USD':true:'1.0' }}

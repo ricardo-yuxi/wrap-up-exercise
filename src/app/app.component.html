@@ -1,0 +1,13 @@
+<h2>Wrap up exercise</h2>
+<input type="text" [(ngModel)]="article">
+<input type="text" [(ngModel)]="value">
+<button (click)="onClick()">Submit</button>
+<p>
+  Result: {{ result | currency:'USD':true:'1.0' }}
+</p>
+<input type="text" [(ngModel)]="article">
+<input type="text" [(ngModel)]="value">
+<button (click)="onClick2()">Submit</button>
+<p>
+  Result: {{ result2 | currency:'USD':true:'1.0' }}
+</p>

@@ -1,0 +1,8 @@
+<div class="container">
+  <input type="text" [(ngModel)]="article">
+  <input type="text" [(ngModel)]="value">
+  <app-primary-button (clickEvent)="calculate()" [value]="'Calculate VAT at ' + vat + '%'">
+  </app-primary-button>
+
+  Result: {{ result | currency:'USD':true:'1.0' }}
+</div>
